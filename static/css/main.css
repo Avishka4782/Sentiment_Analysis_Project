@@ -1,0 +1,103 @@
+/* General Reset */
+* {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background */
+.background-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../static/products/background.jpg") no-repeat center
+    center/cover;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+/* Split Sections */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 20px;
+  top: 0;
+}
+
+.split.left {
+  left: 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.split.right {
+  right: 0;
+}
+
+/* Centered Content */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Area */
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 12px 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  resize: none;
+}
+
+/* Form Submit Button */
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Review Sections */
+.commented-bottom {
+  max-height: 300px;
+  overflow-y: auto;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.commented-user {
+  font-size: 14px;
+  color: #333;
+}
+
+.comment-section {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.text-muted {
+  color: #6c757d;
+}
