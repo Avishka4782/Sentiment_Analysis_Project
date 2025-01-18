@@ -20,23 +20,15 @@
 }
 
 /* Split Sections */
-.split {
+.split right {
+  background: transparent;
   height: 100%;
-  width: 50%;
+  width: 40%;
   position: fixed;
   z-index: 1;
   overflow-x: hidden;
   padding-top: 20px;
   top: 0;
-}
-
-.split.left {
-  left: 0;
-  background: rgba(255, 255, 255, 0.7);
-}
-
-.split.right {
-  right: 0;
 }
 
 /* Centered Content */

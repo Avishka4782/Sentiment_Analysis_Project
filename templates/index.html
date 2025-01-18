@@ -7,27 +7,23 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>App</title>
   </head>
-  <body>
-    <div class="background-blur"></div>
-    <div class="split left">
-      <div class="centered">
-        <img src="../static/products/img01.jpg" alt="Product Image" />
-      </div>
+  <body style="background: url('../static/products/img01.jpg') no-repeat center center; background-size: cover;" >
+    
     </div>
     <div class="split right">
       <div class="container mt-5 mb-5">
         <div class="d-flex justify-content-center row">
-          <div class="d-flex flex-column col-md-8 bg-light p-4 rounded shadow">
+          <div class="d-flex flex-column col-md-8  p-4 rounded shadow" style="backdrop-filter: blur(5px); background-color: rgba(218, 218, 156, 0.7); border-radius: 15px;">
             <div class="text-center mb-4">
-              <h2 class="text-primary">Product Reviews</h2>
+              <h2  style="color: rgb(34, 245, 11);">Product Reviews</h2>
             </div>
             <div>
-              <label class="font-weight-bold">Positive Reviews: </label>
-              <span class="text-success">{{ data.positive }}</span>
+              <label class="font-weight-bold" >Positive Reviews: </label>
+              <span  style="color: black;" >{{ data.positive }}</span>
             </div>
-            <div>
+            <div >
               <label class="font-weight-bold">Negative Reviews: </label>
-              <span class="text-danger">{{ data.negative }}</span>
+              <span style="color: black">{{ data.negative }}</span>
             </div>
             <div class="mt-4">
               <form method="post">
@@ -35,7 +31,7 @@
                 <input type="submit" class="btn btn-primary btn-block" value="Submit" />
               </form>
             </div>
-            <div class="commented-bottom bg-white p-3 mt-4">
+            <div class="commented-bottom p-3 mt-4 " style="border-radius: 15px; backdrop-filter: blur(8px); background-color: rgba(248, 248, 242, 0.7);">
               {% for review in data.reviews %}
               <div class="commented-section mt-2">
                 <div class="d-flex flex-row align-items-center commented-user">
